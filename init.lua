@@ -1,4 +1,7 @@
+-- vim.cmd.colorscheme = 'mgsv_phantomPain'
+
 --[[
+--
 
 =====================================================================
 ==================== READ THIS BEFORE CONTINUING ====================
@@ -30,7 +33,7 @@ What is Kickstart?
 
     Once you've done that, you can start exploring, configuring and tinkering to
     make Neovim your own! That might mean leaving Kickstart just the way it is for a while
-    or immediately breaking it into modular pieces. It's up to you!
+    or immediately breaking it into modular piees. It's up to you!
 
     If you don't know anything about Lua, I recommend taking some time to read through
     a guide. One possible example which will only take 10-15 minutes:
@@ -745,13 +748,14 @@ require('lazy').setup({
     --
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
     --
-    'ellisonleao/gruvbox.nvim',
+    -- 'ellisonleao/gruvbox.nvim',
+    'folke/tokyonight.nvim',
     priority = 1000, -- Make sure to load this before all the other start plugins.
     init = function()
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      vim.cmd.colorscheme 'despacio'
+      vim.cmd.colorscheme 'mgsv_phantomPain'
       -- require 'customecolor_schemes'
 
       vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
@@ -897,5 +901,8 @@ require('nvim-tree').setup {
     dotfiles = false,
   },
 }
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+
+-- require 'mgsv_phantomPain'
