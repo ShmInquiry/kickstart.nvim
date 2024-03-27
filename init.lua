@@ -86,7 +86,10 @@ I hope you enjoy your Neovim journey,
 
 P.S. You can delete this when you're done too. It's your config now! :)
 --]]
+
 -- Define your colors
+-- [[
+--
 local gradient_color_1 = '#00ffa5'
 local gradient_color_2 = '#ffdc9d'
 local gradient_color_3 = '#ffcf76'
@@ -94,7 +97,8 @@ local gradient_color_4 = '#ffc862'
 local gradient_color_5 = '#ffc14e'
 local gradient_color_6 = '#ffba3b'
 local gradient_color_7 = '#ffb327'
-local gradient_color_8 = '#ffac14'
+local gradient_color_8 = '#ffac14' 
+--]]
 
 -- Set <space> as the leader key
 -- See `:help mapleader`
@@ -750,6 +754,7 @@ require('lazy').setup({
     --
     -- 'ellisonleao/gruvbox.nvim',
     'folke/tokyonight.nvim',
+    -- '/usr/share/nvim/runtime/colors/mgsv_phantomPain',
     priority = 1000, -- Make sure to load this before all the other start plugins.
     init = function()
       -- Load the colorscheme here.
